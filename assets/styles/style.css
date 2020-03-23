@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav {
+  width: 90%;
+  padding: 0.6rem 0;
+  display: -webkit-flex;
+  display: flex;
+  margin-left: 4.375rem;
+}
+
+.nav-brand {
+  margin: 0.75rem;
+}
+
+.nav-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: 0.625rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 2.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: gold;
+}
+
+.fa-angle-down {
+  margin-left: 0.3125rem;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: -22px;
+  display: none;
+  width: 8.125rem;
+  padding-top: 1.5rem;
+}
+
+.has-dropdown:hover .dropdown-menu {
+  display: block;
+  top: 100%;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.dropdown-list a {
+  color: gold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dropdown-list a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-item {
+  margin-bottom: 1.25rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.fa-bars {
+  margin: 0.625rem;
+  color: white;
+}
+
+.contact-login {
+  display: -webkit-flex;
+  display: flex;
+  margin-left: auto;
+}
+
+.contact {
+  color: white;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fa-phone-alt {
+  cursor: pointer;
+}
+
+.fa-phone-alt:hover {
+  color: gold;
+}
+
+.numb {
+  font-family: 'Overpass', sans-serif;
+  margin-left: 0.625rem;
+}
+
+.login {
+  margin-left: 1.875rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.login-btn {
+  background: rgba(47, 45, 45, 0.8);
+  color: white;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 0.75rem 0.85rem;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: black;
+  color: gold;
+}
+
+.login-btn:focus,
+.login-btn:active {
+  outline: none;
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
+.mobile-menu-list {
+  list-style: none;
+}
+
+.mobile-menu-item {
+  margin-bottom: 2rem;
+}
+
+.mobile-menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-menu-link:hover {
+  color: gold;
+}
+
+main {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/office-hallway.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.fa-arrow-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+  -webkit-animation: size-change 1s linear infinite;
+  animation: size-change 1s linear infinite;
+}
+
+@-webkit-keyframes size-change {
+  0% {
+    height: 5rem;
+  }
+
+  100% {
+    height: 2.5rem;
+  }
+}
+
+@keyframes size-change {
+  0% {
+    height: 5rem;
+  }
+
+  100% {
+    height: 2.5rem;
+  }
+}
+
+.main-container {
+  width: 100%;
+  background: white;
+  padding: 6.25rem 0;
+}
+
+.main-container h2 {
+  text-align: center;
+}
+
+.box-container {
+  width: 97%;
+  margin: 4.5rem auto;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 17.9rem;
+  border: 1px solid #eeeeee;
+  margin-bottom: 0.625rem;
+  text-align: center;
+  padding: 5rem 0.625rem;
+}
+
+.m-right {
+  margin-right: 0.625rem;
+}
+
+.join-box {
+  width: 43.75rem;
+  max-width: 90%;
+  margin: 7.5rem auto 0 auto;
+  text-align: center;
+}
+
+.join-box h2 {
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.join-btn {
+  background: #ffcc33;
+  padding: 0.8rem 1.7rem;
+  text-decoration: none;
+  color: black;
+  outline: none;
+  font-size: 0.9rem;
+  border: 1px solid #ffcc33;
+  font-family: inherit;
+  border-radius: 3px;
+}
+
+.subscription {
+  background: #0e0e0e;
+  text-align: center;
+  color: white;
+  padding: 4rem 0 2rem 0;
+}
+
+.subscription h3 {
+  width: 43.75rem;
+  max-width: 90%;
+  margin: 0 auto 2.6rem auto;
+}
+
+.subscription form {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto 1.6rem auto;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 12.5rem;
+  margin-bottom: 0;
+  margin-right: 0.2rem;
+  padding: 0.57rem 0 0.57rem 0.7rem;
+  border: 1px solid silver;
+  border-radius: 3px;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.sub-btn {
+  background: #ffcc33;
+  border: 1px solid #ffcc33;
+  padding: 0.625rem 2.5rem;
+  border-radius: 3px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  background: #000000;
+  padding: 5rem 8.125rem 4rem 8.125rem;
+}
+
+.top-footer {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+  display: inline-block;
+  letter-spacing: 0.0625rem;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+.social-links a:hover {
+  color: gold;
+}
+
+.dot {
+  font-size: 1.8125rem;
+  color: gray;
+  position: relative;
+  top: -4px;
+  left: 0;
+  margin: 0 0 0 1.25rem;
+}
+
+.social-media-links {
+  margin: 5.5rem 0 0 0;
+}
+
+.m-right-icons {
+  margin-right: 0.7rem;
+}
+
+.address {
+  color: white;
+  line-height: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.brand-numbers {
+  color: white;
+  margin-top: 3rem;
+  line-height: 0.3125rem;
+}
+
+.copyright {
+  color: white;
+  font-family: inherit;
+}
+
+.dott {
+  font-size: 1.8125rem;
+  color: gray;
+  position: relative;
+  top: -4px;
+  left: 0;
+}
+
+.copyright a {
+  color: white;
+  margin-left: 0.3125rem;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: relative;
+    left: 10%;
+  }
+
+  .contact-login {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: none;
+    background: rgba(0, 0, 0, 1);
+    padding: 0.625rem 0;
+  }
+
+  .mobile-menu-container.visible {
+    display: block;
+  }
+
+  .mobile-dropdown-menu {
+   display: none;
+   border-bottom: 1px solid rgb(24, 23, 23);
+   margin-right: 2.1875rem;
+   padding-bottom: 1.25rem;
+  }
+
+  .mobile-dropdown-menu.visible {
+    display: block;
+  }
+
+  .mobile-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.25rem;
+  }
+
+  .mobile-dropdown-item {
+    margin-bottom: 1.25rem;
+  }
+
+  .mobile-dropdown-list a {
+    color: gold;
+    text-decoration: none;
+  }
+
+  .mobile-dropdown-list a:hover {
+    text-decoration: underline;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .m-right {
+    margin-right: 0;
+  }
+
+  .subscription form {
+    flex-direction: column;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    margin-bottom: 0.625rem;
+    margin-right: 0;
+    padding: 1rem 0 1rem 0.7rem;
+    font-size: 1rem;
+  }
+
+  .sub-btn {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .top-footer {
+    flex-direction: column;
+  }
+
+  .social-links a {
+    font-size: 0.85rem;
+  }
+
+  .social-media-links {
+    margin: 1.7rem 0 0 0;
+  }
+
+  .contact-brand {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 1209px) {
+  .contact-login {
+    left: 7%;
+  }
+
+  .box-container {
+    justify-content: space-evenly;
+  }
+
+  .m-right {
+    margin-right: 0;
+  }
+}
