@@ -223,7 +223,7 @@ main {
 
 .fa-arrow-down {
   position: absolute;
-  bottom: 40%;
+  bottom: 50%;
   left: 50%;
   text-align: center;
   color: white;
@@ -234,21 +234,21 @@ main {
 
 @-webkit-keyframes point-down {
   0% {
-    bottom: 10vw;
+    bottom: 5%;
   }
 
   100% {
-    bottom: 5vw;
+    bottom: 2%;
   }
 }
 
 @keyframes point-down {
   0% {
-    bottom: 10vw;
+    bottom: 5%;
   }
 
   100% {
-    bottom: 5vw;
+    bottom: 2%;
   }
 }
 
