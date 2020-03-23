@@ -223,7 +223,7 @@ main {
 
 .fa-arrow-down {
   position: absolute;
-  bottom: 5%;
+/*   bottom: 5%; */
   left: 50%;
   text-align: center;
   color: white;
