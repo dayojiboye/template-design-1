@@ -233,22 +233,20 @@ main {
 }
 
 @-webkit-keyframes point-down {
-  0% {
-    bottom: 5%;
+ 0% {
+    transform: translateY(0);
   }
-
   100% {
-    bottom: 2%;
+    transform: translateY(-35px);
   }
 }
 
 @keyframes point-down {
-  0% {
-    bottom: 5%;
+ 0% {
+    transform: translateY(0);
   }
-
   100% {
-    bottom: 2%;
+    transform: translateY(-35px);
   }
 }
 
