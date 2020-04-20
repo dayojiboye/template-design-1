@@ -234,19 +234,19 @@ main {
 
 @-webkit-keyframes point-down {
  0% {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
   100% {
-    transform: translateY(-35px);
+    transform: translateY(-70%);
   }
 }
 
 @keyframes point-down {
  0% {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
   100% {
-    transform: translateY(-35px);
+    transform: translateY(-70%);
   }
 }
 
