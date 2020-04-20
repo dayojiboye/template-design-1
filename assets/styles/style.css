@@ -227,6 +227,7 @@ main {
   left: 50%;
   text-align: center;
   color: white;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-animation: point-down 0.7s linear infinite alternate;
   animation: point-down 0.7s linear infinite alternate;
@@ -234,20 +235,24 @@ main {
 
 @-webkit-keyframes point-down {
   0% {
+  -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 
   100% {
+    -webkit-transform: translate(-50%, -20%);
     transform: translate(-50%, -20%);
   }
 }
 
 @keyframes point-down {
   0% {
+  -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 
   100% {
+    -webkit-transform: translate(-50%, -20%);
     transform: translate(-50%, -20%);
   }
 }
