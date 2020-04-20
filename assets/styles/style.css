@@ -223,30 +223,32 @@ main {
 
 .fa-arrow-down {
   position: absolute;
-  bottom: 50%;
+  bottom: 5%;
   left: 50%;
   text-align: center;
   color: white;
   transform: translate(-50%, -50%);
-  -webkit-animation: point-down 1s linear infinite;
-  animation: point-down 1s linear infinite;
+  -webkit-animation: point-down 0.7s linear infinite alternate;
+  animation: point-down 0.7s linear infinite alternate;
 }
 
 @-webkit-keyframes point-down {
- 0% {
-    transform: translateY(-50%);
+  0% {
+    transform: translate(-50%, -50%);
   }
+
   100% {
-    transform: translateY(-70%);
+    transform: translate(-50%, -20%);
   }
 }
 
 @keyframes point-down {
- 0% {
-    transform: translateY(-50%);
+  0% {
+    transform: translate(-50%, -50%);
   }
+
   100% {
-    transform: translateY(-70%);
+    transform: translate(-50%, -20%);
   }
 }
 
